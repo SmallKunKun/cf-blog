@@ -73,12 +73,8 @@
             <span>发布于</span>
             <time  class="article-date" datetime="{{ &articleSingle.createDate10 }}" itemprop="datePublished">{{ &articleSingle.createDate10 }}</time>
           </h2>
-          <ul class="wrap-list dark">
-  
-    <li>{{ #articleSingle.category }}<a>📒 {{&.}}</a>{{ /articleSingle.category }}</li>
-		<ul class="wrap-list dark"> 
-    <li>{{ #articleSingle.tags }}<a href="/tags/{{&.}}">🏷️ {{&.}}</a>{{ /articleSingle.tags }}</li>  
-</ul>
+          <ul class="wrap-list dark"><li>{{ #articleSingle.category }}<a href="/category/{{&.}}">📒 {{&.}}</a>{{ /articleSingle.category }}</li></ul>
+	  <ul class="wrap-list dark"><li>{{ #articleSingle.tags }}<a href="/tags/{{&.}}">🏷️ {{&.}}</a>{{ /articleSingle.tags }}</li></ul>
         </div>
       </div>
     </div>
