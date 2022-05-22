@@ -128,12 +128,15 @@
     <ul class="categorys-list">
       {{ #widgetCategoryList }}
         <li class="categorys-list-item">
-          <a>
+          <a href="/category/{{&.}}">
           {{&.}}
           </a>
         </li>
       {{ /widgetCategoryList }}
     </ul>
+<ul class="wrap-list dark"> 
+    <li>{{ #widgetTagsList }}<a href="/tags/{{&.}}">🏷️ {{&.}}</a>{{ /widgetTagsList }}</li>  
+</ul>
   </div>
 </section>
 
