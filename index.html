@@ -75,7 +75,12 @@
             </div>
             <ul class="wrap-list light">
   
-    <li>{{ #category }}<a>📒 {{&.}}</a>{{ /category }}</li>
+    <li>{{ #category }}<a href="/category/{{&.}}">📒 {{&.}}</a>{{ /category }}</li>
+  
+</ul>
+<ul class="wrap-list light">
+  
+    <li>{{ #tags }}<a href="/tags/{{&.}}">🏷️ {{&.}}</a>{{ /tags }}</li>
   
 </ul>
           </div>
