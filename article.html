@@ -76,7 +76,8 @@
           <ul class="wrap-list dark">
   
     <li>{{ #articleSingle.category }}<a>📒 {{&.}}</a>{{ /articleSingle.category }}</li>
-  
+		<ul class="wrap-list dark"> 
+    <li>{{ #widgetTagsList }}<a href="/tags/{{&.}}">🏷️ {{&.}}</a>{{ /widgetTagsList }}</li>  
 </ul>
         </div>
       </div>
@@ -134,9 +135,6 @@
         </li>
       {{ /widgetCategoryList }}
     </ul>
-<ul class="wrap-list dark"> 
-    <li>{{ #widgetTagsList }}<a href="/tags/{{&.}}">🏷️ {{&.}}</a>{{ /widgetTagsList }}</li>  
-</ul>
   </div>
 </section>
 
@@ -150,7 +148,7 @@
   <div class="widget-body">
     <div class="tags-cloud">
 	  {{ #widgetTagsList }}
-      <a style="font-size: 10px;" class="tags-cloud-0">{{&.}}</a>
+      <a href="/tags/{{&.}}" style="font-size: 10px;" class="tags-cloud-0">{{&.}}</a>
 	  {{ /widgetTagsList }}
     </div>
   </div>
